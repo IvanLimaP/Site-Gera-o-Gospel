@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --bg-light: #e6e6e6;
+  --bg-dark: #202020;
+  --card-light: #ffffff;
+  --card-dark: #3b3b3b;
+  --text-light: #333;
+  --text-dark: #f1f1f1;
+  --primary: #0a5c6d;
+  --divPropriedadesCard-light: #ffffff;
+  --divPropriedadesCard-dark: #3b3b3b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.light {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.imgHeader {
+  margin-top: 2rem;
+  width: 12rem;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.divtext {
+  color: var(--text-light); 
+}
+
+.dark .divtext {
+  color: var(--text-dark);
+  
+}
+
+.divPropriedadesCard {
+  background: var(--divPropriedadesCard-light);
+}
+
+.dark .divPropriedadesCard {
+  background: var(--divPropriedadesCard-dark);
+}
+
+.header,
+.menu,
+.card {
+  background: var(--card-light);
+}
+
+.dark .header,
+.dark .menu,
+.dark .card {
+  background: var(--card-dark);
+}
+
+.imgPaginasCard{
+  width: 1.8rem;
+  height: 1.8rem;
+  padding-right: 10px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+.linkPaginasCard {
+  width: 10rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.linkPages {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.menu {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  text-decoration: none;
+}
+
+.linkPaginasCard:hover {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #faa676c0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.theme-btn {
+  background: #cacaca;
+  color: #000000;
+  border: none;
+  border-radius: 10px 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.banner {
+  margin-top: 10rem;
+  width: 20rem;
+}
+
+.card {
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.divFooterIcons {
+  width: 15rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgBannerStatic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35rem;
+  background-color: #0a5c6d;
+}
+
+.imgBannerCarrousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40rem;
+  margin: 0;
+  background-color: #0a5c6d;
+}
+
+.carousel-container {
+  width: 75%;
+  height: 40rem;
+  margin-top: .5rem;
+  color: black;
+  text-align: center;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 25px;
+  font-family: 'slick';
+  line-height: 2px;
+  opacity: .5;
+  color: black;
+}
+
+.sectionCardPropriedades {
+  width: auto;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.containerCardPropriedades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  height: 35rem;
+  justify-items: center; /* Alinhamento horizontal: start, end, center, stretch */
+  align-items: center;
+}
+
+.imgPropriedadesCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 35rem;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 2px solid rgba(8, 8, 8, 0.39);
+  border-right: 2px solid rgba(0, 0, 0, 0.39);
+  border-left: 2px solid rgba(0, 0, 0, 0.39);
+}
+
+.imgtextCard {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+
+.p-texto-card {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #0a5c6d;
+}
+
+.divtext {
+  width: 95%;
+  height: 3rem;
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  margin-left: 8px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.divPropriedadesCard > .linkCardsProPriedades > .divtext {
+  text-decoration: none;
+}
+
+.logoSiteMenu {
+  width: 5%;
+}
+
+.linkCardsProPriedades {
+  width: 28rem;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.divPropriedadesCard {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.subTitleH3 {
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+
+
+@media only screen and (min-width: 1080px) and (max-width: 1919px) {
+  .carousel-container {
+    width: 75%;
+    height: 50rem;
+    margin-top: .5rem;
+    color: black;
+    text-align: center;
+  }  
+
+  
+
+  .imgBannerCarrousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45rem;
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .divPropriedadesCard {
+    width: 70%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+  }
+
+}
+
+@media only screen and (min-width: 340px) and (max-width: 714px) {
+  .imgBannerCarrousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40rem;
+    margin: 0;
+    background-color: #0a5c6d;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+}
