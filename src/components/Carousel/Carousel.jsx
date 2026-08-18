@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./style.css";
+import "./Style.css";
 
 const images = [
   "./imagens/imgCarousel01.jpg",
