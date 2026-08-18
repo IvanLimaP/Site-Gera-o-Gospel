@@ -5,6 +5,7 @@ import Menu from './components/menu/menu'
 import BannerStatic from './components/bannerStatic/BannerStatic'
 import NewsCards from './components/cards/Cards'
 import Carousel from './components/Carousel/Carousel'
+import VersiculoRadio from './components/versiculoRadio/versiculoRadio'
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Menu />
       <Carousel />
       <NewsCards />
+      <VersiculoRadio />
     </>
     
   )
