@@ -2,7 +2,7 @@
     position: relative;
     width: auto;
     max-width: 100%;
-    height: 54rem;
+    height: 73rem;
     max-height: auto;
     margin: 0 auto;
     overflow: hidden;
@@ -104,10 +104,15 @@
   
   /* Responsividade */
   
+  @media (max-width: 1919px) {
+    .carousel {
+      height: 52rem;
+    }
+  }
+
   @media (max-width: 768px) {
     .carousel {
       height: 350px;
-      border-radius: 12px;
     }
   
     .carousel-button {

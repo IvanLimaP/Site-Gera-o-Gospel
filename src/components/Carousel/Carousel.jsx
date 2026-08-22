@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Style.css";
 
 const images = [
@@ -18,8 +18,17 @@ export default function Carousel() {
     setCurrent((prev) => (prev - 1 + images.length) % images.length);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000); // programado para trocar a cada 5 segundos
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="carousel">
+      
       <div
         className="carousel-track"
         style={{

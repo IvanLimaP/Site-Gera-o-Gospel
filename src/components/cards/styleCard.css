@@ -7,16 +7,16 @@
   
   .news-container {
     width: 100%;
-    max-width: 1150px;
+    max-width: 90rem;
     margin: 0 auto;
   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: 8rem;
   }
 
   .h2Publicacoes {
-    padding-left: 5rem;
+    padding-left: 13.5rem;
     color:#a32924;
   }
   
@@ -68,6 +68,7 @@
   /* CONTEÚDO */
   
   .news-content {
+    cursor: pointer;
     padding: 17px 16px 18px;
   }
   
@@ -181,6 +182,26 @@
     .news-container {
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+
+  /* NOTEBOOK */
+  @media (max-width: 1500px) {
+
+    .h2Publicacoes {
+      padding-left: 6rem;
+      color:#a32924;
+    }
+
+    .news-container {
+      width: 100%;
+      max-width: 70rem;
+      margin: 0 auto;
+    
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
   }
   
   /* CELULAR */
