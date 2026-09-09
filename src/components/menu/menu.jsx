@@ -47,47 +47,17 @@ export default function PaginasCard() {
 
   return (
     <section className="">
-      <button className="hamburguer"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Abrir menu"
-      >
-        <motion.span
-          animate={{
-            rotate: menuOpen ? 45 : 0,
-            Y: menuOpen ? 8 : 0
-          }}
-        />
-
-        <motion.span
-          animate={{
-            opacity: menuOpen ? 0 : 1
-          }}
-        />
-
-        <motion.span
-          animate={{
-            rotate: menuOpen ? -45 : 0,
-            y: menuOpen ? -8 : 0
-          }}
-        />
-
-      </button>
-
+      
       <div className={`menu ${menuOpen ? "menu-open" : ""}`}>
 
-        <img
-          src="./logoSite.png"
-          className='logoSiteMenu'
-          alt="" />
-
+          <img
+            src="./logoSite.png"
+            className='logoSiteMenu'
+            alt=""
+            
+          />
         {paginas.map((pagina) => (
-
-          <motion.div
-            key={pagina.id}
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-          >
-
+     
             <Link
               to={pagina.route}
               className="linkPaginasCard textPaginasCard"
@@ -105,7 +75,7 @@ export default function PaginasCard() {
 
               </div>
             </Link>
-          </motion.div>
+          
         ))}
         <button className="theme-btn" onClick={toggleTheme}>
           {theme === 'light' ? '🌙 Dark' : '☀️ Light'}

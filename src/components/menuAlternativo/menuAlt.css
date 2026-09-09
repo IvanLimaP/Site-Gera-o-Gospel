@@ -1,0 +1,357 @@
+  
+  
+  /* =========================================
+     MENU
+  ========================================= */
+  
+  .floating-menu {
+    position: fixed;
+  
+    left: 50%;
+    bottom: 30px;
+  
+    transform: translateX(-50%);
+  
+    width: 300px;
+    height: 64px;
+  
+    background: rgba(255, 255, 255, 0.96);
+  
+    border-radius: 22px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+    padding: 0 8px;
+  
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.10),
+      0 2px 8px rgba(0, 0, 0, 0.05);
+  
+    z-index: 1000;
+  
+    backdrop-filter: blur(12px);
+  }
+  
+  
+  /* =========================================
+     BOTÕES
+  ========================================= */
+  
+  .menu-alt-item {
+    width: 46px;
+    height: 46px;
+  
+    border: none;
+    background: transparent;
+  
+    border-radius: 14px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: relative;
+  
+    cursor: pointer;
+  
+    color: #777;
+  
+    transition:
+      background 0.25s ease,
+      color 0.25s ease,
+      transform 0.25s ease;
+  }
+  
+  
+  /* Hover */
+  
+  .menu-alt-item:hover {
+    color: #222;
+  
+    background: #f1f4f8;
+  
+    transform: translateY(-2px);
+  }
+  
+  
+  /* =========================================
+     ITEM ATIVO
+  ========================================= */
+  
+  .menu-alt-item.active {
+    background: #e8f1ff;
+  
+    color: #4d8df7;
+  }
+  
+  
+  /* Bolinha azul */
+  
+  .active-dot {
+    position: absolute;
+  
+    width: 5px;
+    height: 5px;
+  
+    border-radius: 50%;
+  
+    background: #4d8df7;
+  
+    bottom: -8px;
+  
+    left: 50%;
+  
+    transform: translateX(-50%);
+  }
+  
+  
+  /* =========================================
+     BOTÃO CREATE
+  ========================================= */
+  
+  .create-button {
+    width: 46px;
+    height: 46px;
+  
+    background: #a9caff;
+  
+    color: white;
+  
+    border-radius: 14px;
+  
+    box-shadow:
+      0 5px 15px rgba(76, 141, 247, 0.25);
+  }
+  
+  
+  /* Quando Create está ativo */
+  
+  .create-button.active {
+    background: #4d8df7;
+  
+    color: white;
+  }
+  
+  
+  /* Hover Create */
+  
+  .create-button:hover {
+    background: #8eb8fa;
+  
+    color: white;
+  
+    transform: translateY(-4px);
+  }
+  
+  
+  /* =========================================
+     TOOLTIP
+  ========================================= */
+  
+  .tooltip {
+    position: absolute;
+  
+    bottom: 56px;
+  
+    left: 50%;
+  
+    transform:
+      translateX(-50%)
+      translateY(5px);
+  
+    background: #30343b;
+  
+    color: white;
+  
+    padding: 5px 9px;
+  
+    border-radius: 7px;
+  
+    font-size: 11px;
+  
+    white-space: nowrap;
+  
+    opacity: 0;
+  
+    pointer-events: none;
+  
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
+  }
+  
+  
+  /* Setinha */
+  
+  .tooltip::after {
+    content: "";
+  
+    position: absolute;
+  
+    left: 50%;
+  
+    bottom: -4px;
+  
+    transform: translateX(-50%);
+  
+    width: 8px;
+    height: 8px;
+  
+    background: #30343b;
+  
+    rotate: 45deg;
+  }
+  
+  
+  /* Mostrar tooltip */
+  
+  .menu-alt-item:hover .tooltip {
+    opacity: 1;
+  
+    transform:
+      translateX(-50%)
+      translateY(0);
+  }
+  
+  
+  /* =========================================
+     CONTEÚDO
+  ========================================= */
+  
+  .contentMenuAlt {
+    min-height: 100vh;
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    align-items: center;
+    justify-content: center;
+  
+    text-align: center;
+  
+    padding: 30px;
+  }
+  
+  .contentMenuAlt h1 {
+    font-size: 40px;
+  
+    margin-bottom: 10px;
+  }
+  
+  .contentMenuAlt p {
+    color: #777;
+  }
+  
+  
+  /* =========================================
+     RESPONSIVIDADE TABLET
+  ========================================= */
+  
+  @media (max-width: 700px) {
+  
+    .floating-menu {
+      width: calc(100% - 30px);
+  
+      max-width: 400px;
+  
+      bottom: 18px;
+  
+      height: 62px;
+  
+      border-radius: 20px;
+    }
+  
+    .menu-alt-item {
+      width: 44px;
+      height: 44px;
+    }
+  
+  }
+  
+  
+  /* =========================================
+     RESPONSIVIDADE CELULAR
+  ========================================= */
+  
+  @media (max-width: 480px) {
+  
+    .floating-menu {
+  
+      width: calc(100% - 20px);
+  
+      height: 60px;
+  
+      bottom: 10px;
+  
+      padding: 0 4px;
+  
+      border-radius: 18px;
+    }
+  
+  
+    .menu-alt-item {
+  
+      width: 42px;
+      height: 42px;
+  
+      border-radius: 13px;
+    }
+  
+  
+    .menu-alt-item svg {
+  
+      width: 21px;
+      height: 21px;
+    }
+  
+  
+    /* Esconde tooltip no celular */
+  
+    .tooltip {
+      display: none;
+    }
+  
+  
+    .active-dot {
+      bottom: -7px;
+    }
+  
+  
+    .contentMenuAlt {
+      padding-bottom: 100px;
+    }
+  
+  
+    .contentMenuAlt h1 {
+      font-size: 30px;
+    }
+  
+  }
+  
+  
+  /* =========================================
+     CELULARES MUITO PEQUENOS
+  ========================================= */
+  
+  @media (max-width: 360px) {
+  
+    .floating-menu {
+      width: calc(100% - 12px);
+  
+      height: 56px;
+    }
+  
+    .menu-alt-item {
+      width: 38px;
+      height: 38px;
+    }
+  
+    .menu-alt-item svg {
+      width: 19px;
+      height: 19px;
+    }
+  
+  }
