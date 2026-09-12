@@ -41,32 +41,39 @@ body {
 
 }
 
-.divtext {
+.divtext,
+.title-rede-social,
+.news-card {
   color: var(--text-light);
 }
 
-.dark .divtext {
+.dark .divtext,
+.dark .title-rede-social,
+.dark .news-card {
   color: var(--text-dark);
 
 }
-
-.divPropriedadesCard {
+ /*
+.news-card {
   background: var(--divPropriedadesCard-light);
 }
 
-.dark .divPropriedadesCard {
+.dark  {
   background: var(--divPropriedadesCard-dark);
 }
+*/
 
 .header,
 .menu,
-.card {
+.card,
+.footerSection {
   background: var(--card-light);
 }
 
 .dark .header,
 .dark .menu,
-.dark .card {
+.dark .card,
+.dark .footerSection {
   background: var(--card-dark);
 }
 
@@ -357,4 +364,13 @@ body {
     background-color: #0a5c6d;
   }
 
+}
+
+/*CELULAR*/
+
+@media (max-width: 620px) {
+
+  .menu {
+    display: none;
+  }
 }

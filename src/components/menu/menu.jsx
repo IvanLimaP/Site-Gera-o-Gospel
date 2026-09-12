@@ -47,35 +47,35 @@ export default function PaginasCard() {
 
   return (
     <section className="">
-      
-      <div className={`menu ${menuOpen ? "menu-open" : ""}`}>
 
-          <img
-            src="./logoSite.png"
-            className='logoSiteMenu'
-            alt=""
-            
-          />
+      <div className="menu">
+
+        <img
+          src="./logoSite.png"
+          className='logoSiteMenu'
+          alt=""
+
+        />
         {paginas.map((pagina) => (
-     
-            <Link
-              to={pagina.route}
-              className="linkPaginasCard textPaginasCard"
-            >
-              <img
-                src={pagina.image}
-                alt={pagina.title}
-                className="imgPaginasCard"
-              />
 
-              <div className="">
-                <h3 className="subTitleH3">
-                  {pagina.title}
-                </h3>
+          <Link
+            to={pagina.route}
+            className="linkPaginasCard textPaginasCard"
+          >
+            <img
+              src={pagina.image}
+              alt={pagina.title}
+              className="imgPaginasCard"
+            />
 
-              </div>
-            </Link>
-          
+            <div className="">
+              <h3 className="subTitleH3">
+                {pagina.title}
+              </h3>
+
+            </div>
+          </Link>
+
         ))}
         <button className="theme-btn" onClick={toggleTheme}>
           {theme === 'light' ? '🌙 Dark' : '☀️ Light'}

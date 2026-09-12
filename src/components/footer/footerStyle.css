@@ -1,0 +1,76 @@
+.footerSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.footerDivPrincipal {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100rem;
+    height: 15rem;
+}
+
+.link-rede-social {
+    width: 17rem;
+    height: 5rem;
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    color: #2d211c;
+
+  
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+
+}
+
+.link-rede-social:hover {
+    transform: translateY(-5px);
+
+  
+}
+
+.title-rede-social {
+    padding-left: 20px;
+}
+
+.title-rede-social:hover {
+    color: #a32924;
+}
+
+.texto-copyright {
+    margin-bottom: 5rem;
+}
+
+/*CELULAR*/
+
+@media (max-width: 620px) {
+
+    .footerDivPrincipal {
+        max-width: 200px;
+        height: 20rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding-left: 90px;
+    }
+
+    .footerSection {
+      padding: 35px 15px;
+     
+    }
+
+    .texto-copyright {
+        width: 350px;
+        text-align: center;
+    }
+   
+  }

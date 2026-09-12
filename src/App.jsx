@@ -7,6 +7,7 @@ import BannerStatic from './components/bannerStatic/BannerStatic'
 import NewsCards from './components/cards/Cards'
 import Carousel from './components/Carousel/Carousel'
 import VersiculoRadio from './components/versiculoRadio/versiculoRadio'
+import Footer from './components/footer/footer'
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Carousel />
       <NewsCards />
       <VersiculoRadio />
+      <Footer />
     </>
     
   )
