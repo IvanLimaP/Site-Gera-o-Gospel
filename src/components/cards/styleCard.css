@@ -229,6 +229,10 @@
     .news-content p {
       font-size: 14px;
     }
+
+    .h2Publicacoes {
+      align-items: center;
+    }
   }
   
   /* CELULAR PEQUENO */
