@@ -16,7 +16,7 @@ const paginas = [
     id: 2,
     title: "Musica Gospel",
     image: "/imagens/musicaGospel.png",
-    route: "/MusicaGospel",
+    route: "/pageMusicas",
   },
   {
     id: 3,

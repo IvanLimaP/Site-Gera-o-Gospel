@@ -1,29 +1,34 @@
 import { useState } from 'react'
 import './App.css'
 import './styles/global.css'
-import Menu from './components/menu/menu'
-import MenuAlternativo from './components/menuAlternativo/menuAlternativo'
-import BannerStatic from './components/bannerStatic/BannerStatic'
-import NewsCards from './components/cards/Cards'
-import Carousel from './components/Carousel/Carousel'
-import VersiculoRadio from './components/versiculoRadio/versiculoRadio'
-import Footer from './components/footer/footer'
+import { Routes, Route } from "react-router-dom";
+
+
+import Home from './pages/Home/Home'
+import PageMusicas from './pages/PageMusicas/pageMusicas'
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Menu />
-      <Carousel />
-      <NewsCards />
-      <VersiculoRadio />
-      <Footer />
-    </>
-    
-  )
+
+      <Routes>
+
+        {/* HOME */}
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        {/* MÚSICAS */}
+        <Route
+          path="/PageMusicas"
+          element={<PageMusicas />}
+        />
+
+      </Routes>
+
+  );
 }
 
-export default App
+export default App;
