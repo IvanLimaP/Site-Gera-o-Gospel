@@ -41,9 +41,9 @@ function PageMusicas() {
       <Menu />
 
       <div className="music-header">
-        <span>DESTAQUES</span>
-        <h2>Músicas em destaque</h2>
-        <p>
+        <span className="music-header-title">DESTAQUES</span>
+        <h2 className="music-header-title">Músicas em destaque</h2>
+        <p className="music-header-title">
           Ouça as músicas que estão fazendo sucesso.
         </p>
       </div>
