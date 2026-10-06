@@ -54,7 +54,7 @@
     width: 100%;
     height: 100%;
   
-    object-fit: cover;
+    object-fit: fill;
   
     display: block;
   
@@ -236,8 +236,21 @@
   }
   
   @media (max-width: 600px) {
+    .music-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #1db954;
+    }
+
+    .music-card {
+      margin-bottom: 5rem;
+      width: 22rem;
+      height: 30rem;
+    }
+
     .music-card-image {
-      height: 280px;
+      height: 22rem;
     }
   
     .music-card-content {

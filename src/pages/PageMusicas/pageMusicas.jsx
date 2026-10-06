@@ -8,30 +8,30 @@ import Footer from '../../components/footer/footer'
 function PageMusicas() {
   const musicas = [
     {
-      artist: "Cantor 1",
-      song: "Nome da Música 1",
-      image: "imagens/show-card.png",
-      spotifyUrl: "https://open.spotify.com",
+      artist: "Alexander Lucio",
+      song: "Buscar-Me-Eis e Me Achareis",
+      image: "imagens/alexanderLucio.png",
+      spotifyUrl: "https://open.spotify.com/intl-pt/album/7g8LWP9eQyiS9YIbziDPV8?highlight=spotify:track:6a5YMnpTVStVqoBwgOhjDi",
     },
     {
-      artist: "Cantor 2",
-      song: "Nome da Música 2",
-      image: "imagens/show-card.png",
-      spotifyUrl: "https://open.spotify.com",
+      artist: "Alexander Lucio",
+      song: "O Fogo Arderá",
+      image: "imagens/alexanderLucio2.png",
+      spotifyUrl: "https://open.spotify.com/intl-pt/album/4rd6xVSZfkwaltIFTmZWNe?highlight=spotify:track:6ATNNv8tZF61fa7VwDH89j",
 
     },
     {
-      artist: "Cantor 3",
-      song: "Nome da Música 3",
-      image: "imagens/show-card.png",
-      spotifyUrl: "https://open.spotify.com",
+      artist: "Sara Evelyn",
+      song: "Era Deus e Eu",
+      image: "imagens/saraEvelyn.png",
+      spotifyUrl: "https://open.spotify.com/intl-pt/album/4oHQmvKZ9uArhKJmR3XBig?highlight=spotify:track:0GWDhY3P7Y7YF9vOEeRNKp",
 
     },
     {
-      artist: "Cantor 4",
-      song: "Nome da Música 4",
-      image: "imagens/show-card.png",
-      spotifyUrl: "https://open.spotify.com",
+      artist: "Vitor Santana",
+      song: "João 20 + Para Sempre",
+      image: "imagens/vitorSantana.png",
+      spotifyUrl: "https://open.spotify.com/intl-pt/album/3adHglUeEVq6ETuiGOwz3w?highlight=spotify:track:1S9fKs0sAdZPlL8ViOARnS",
 
     },
   ];
