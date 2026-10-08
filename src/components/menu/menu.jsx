@@ -30,12 +30,7 @@ const paginas = [
     image: "/imagens/gospelBrasil.png",
     route: "/BrasilGospel",
   },
-  {
-    id: 5,
-    title: "Carmo Gospel",
-    image: "/imagens/gospelCarmo.png",
-    route: "/CarmoGospel",
-  },
+  
 
 
 ];
