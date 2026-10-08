@@ -370,7 +370,21 @@ body {
 
 @media (max-width: 620px) {
 
-  .menu {
+  .subTitleH3, .logoSiteMenu {
     display: none;
+  }
+
+  .imgPaginasCard {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .linkPaginasCard {
+    width: 4rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
   }
 }
