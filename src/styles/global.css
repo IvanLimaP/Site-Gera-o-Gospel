@@ -375,8 +375,8 @@ body {
   }
 
   .imgPaginasCard {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 1.8rem;
   }
 
   .linkPaginasCard {
@@ -387,4 +387,17 @@ body {
     justify-content: center;
     text-decoration: none;
   }
+
+  
+
+  .menu {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    text-decoration: none;
+  }
+  
 }
