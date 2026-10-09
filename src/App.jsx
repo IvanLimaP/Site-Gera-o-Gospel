@@ -8,33 +8,40 @@ import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home/Home';
 import PageMusicas from './pages/PageMusicas/pageMusicas'
 import PagePalavraGospel from './pages/PagePalavraGospel/pagePalavraGospel'
+import GospelBrasil from './pages/GospelBrasil/gospelBrasil';
 
 
 
 function App() {
   return (
 
-      <Routes>
+    <Routes>
 
-        {/* HOME */}
-        <Route
-          path="/"
-          element={<Home />}
-        />
+      {/* HOME */}
+      <Route
+        path="/"
+        element={<Home />}
+      />
 
-        {/* MÚSICAS */}
-        <Route
-          path="/PageMusicas"
-          element={<PageMusicas />}
-        />
+      {/* MÚSICAS */}
+      <Route
+        path="/PageMusicas"
+        element={<PageMusicas />}
+      />
 
-        {/* Palavra Gospel */}
-        <Route 
+      {/* Palavra Gospel */}
+      <Route
         path="/PagePalavraGospel"
         element={<PagePalavraGospel />}
-        />
+      />
 
-      </Routes>
+      {/* Gospel Brasil */}
+      <Route
+        path="/GospelBrasil"
+        element={<GospelBrasil />}
+      />
+
+    </Routes>
 
   );
 }

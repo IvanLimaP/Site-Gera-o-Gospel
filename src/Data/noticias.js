@@ -22,7 +22,7 @@ const noticias = [
       date: "17 de ago, 2026",
   
       // Página que será aberta
-      link: "/palavra",
+      link: "/PagePalavraGospel",
     },
   
     {
@@ -35,7 +35,7 @@ const noticias = [
       date: "16 de ago, 2026",
   
       // Página que será aberta
-      link: "/noticias",
+      link: "/GospelBrasil",
     },
   ];
   
