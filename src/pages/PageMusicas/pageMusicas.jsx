@@ -1,5 +1,5 @@
 import MusicCard from "./cardsPageMusicas";
-import "./styleCardMusicas.css";
+import './styleCardMusicas.css';
 import Menu from '../../components/menu/menu'
 import VersiculoRadio from '../../components/versiculoRadio/versiculoRadio'
 import Footer from '../../components/footer/footer'

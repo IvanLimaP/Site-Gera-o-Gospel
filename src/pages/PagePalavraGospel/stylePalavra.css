@@ -1,0 +1,72 @@
+
+.container-artigo {
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.container-artigo2 {
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.texto-artigo {
+    width: 45rem;
+    
+}
+
+.img-artigo:hover {
+
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.img-artigo {
+    width: 30rem;
+    height: 25rem;
+    border-radius: 0 12rem 0 12rem;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 600px) {
+
+    .container-palavra {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-artigo {
+        height: 50rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+
+    .container-artigo2 {
+        height: 65rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+   .texto-artigo {
+    width: 23rem;
+   }
+
+   .img-artigo {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 0 12rem 0 12rem;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+}

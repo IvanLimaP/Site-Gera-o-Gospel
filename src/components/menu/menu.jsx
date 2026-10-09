@@ -22,7 +22,7 @@ const paginas = [
     id: 3,
     title: "Palavra Gospel",
     image: "/imagens/palavraGospel.png",
-    route: "/PalavralGospel",
+    route: "/PagePalavraGospel",
   },
   {
     id: 4,
