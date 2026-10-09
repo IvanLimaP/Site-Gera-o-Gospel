@@ -24,12 +24,7 @@ const paginas = [
     image: "/imagens/palavraGospel.png",
     route: "/PagePalavraGospel",
   },
-  {
-    id: 4,
-    title: "Brasil Gospel",
-    image: "/imagens/gospelBrasil.png",
-    route: "/BrasilGospel",
-  },
+  
   
 
 
